@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+</ht<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% if messages %}
+<ul class="messages">
+    {% for message in messages %}
+    <li>{% if message.tags %}  {% endif %} {{ message }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
+<form action="/quiz19/" method="POST">
+    {% csrf_token %}
+    what is capital of westbengal?<br>
+    <input type="radio" name="1ans" value="bhopal">
+    <label for="bhopal">bhopal</label><br>
+    <input type="radio" name="1ans" value="calcutta">
+    <label for="calcutta">calcutta</label><br>
+    <input type="radio" name="1ans" value="dispur">
+    <label for="dispur">dispur</label><br>
+    <input type="radio" name="1ans" value="itanagar">
+    <label for="itanagar">itanagar</label><br>
+    <input type="submit">
+</form>
+
+</body>
+</html>

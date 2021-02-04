@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/quiz22/" method="POST">
+    {% csrf_token %}
+    what is capital of himachalpradesh?<br>
+    <input type="radio" name="1ans" value="shimla">
+    <label for="shimla">shimla</label><br>
+    <input type="radio" name="1ans" value="hyderabad">
+    <label for="hyderabad">hyderabad</label><br>
+    <input type="radio" name="1ans" value="dispur">
+    <label for="dispur">dispur</label><br>
+    <input type="radio" name="1ans" value="itanagar">
+    <label for="itanagar">itanagar</label><br>
+    <input type="submit">
+</form>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="http://127.0.0.1:8000/">home</a>
+<form action="/register/" method="POST">
+    {% csrf_token %}
+    enter username:<br>
+    <input type="text" placeholder="enter username" name="username" ><br>
+    enter password:<br>
+    <input type="password" placeholder="enter password" name="password"><br>
+    confirm password:<br>
+    <input type="password" placeholder="confirm password" name="cpassword"><br>
+    <input type="submit">
+
+</form>
+</body>
+</html>

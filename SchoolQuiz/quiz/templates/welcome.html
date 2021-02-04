@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        h2{
+        background-color:green;
+        }
+        form{
+        margin:20px;
+        }
+    </style>
+</head>
+<body>
+<h2>welcome {{ request.user.username }}</h2><br>
+<form method="POST" action="/quiz0/" align="center">
+    {% csrf_token %}
+    <input type="submit" value="start quiz1">
+</form>
+<form method="POST" action="/quiz02/" align="center">
+    {% csrf_token %}
+    <input type="submit" value="start quiz2">
+</form>
+
+</body>
+</html>
